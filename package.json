@@ -14,6 +14,6 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "ava": "^1.0.0-rc.1"
+    "ava": "^0.25.0"
   }
 }
