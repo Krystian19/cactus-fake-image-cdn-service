@@ -8,9 +8,39 @@ docker -v
 Docker version 18.03.0-ce # Or later
 ```
 
-### Todo list
-- [ ] Setup the Dockerfile.
-- [ ] Setup examples and use cases.
+## Docker-compose setup example
+How to use it inside a docker-compose file:
+```yaml
+version: '3'
+
+services:
+  fake_image_cdn: # fake-image-cdn service
+    build:
+      ./fake-image-cdn
+    volumes:
+      - ./fake-image-cdn:/app
+    ports: ['8000:3000']
+```
+
+## Standalone Setup
+
+Inside the project's directory ...
+
+Build the docker image:
+```
+docker build --no-cache -t janguzman/fake_image_cdn .
+```
+
+### Run the project
+
+Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
+```sh
+docker run -ti --name=fake_img_cdn -d -v $(pwd):/app -p 8000:3000 janguzman/fake_image_cdn
+```
+
+<!-- ### Todo list
+- [x] Setup the Dockerfile.
+- [ ] Setup examples and use cases. -->
 
 ## License
 MIT © Jan Guzman
