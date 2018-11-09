@@ -46,7 +46,7 @@ docker exec -ti fake_img_cdn ava
 ```
 
 ## Usage instructions
-Just place the images inside the src/img directory. And refere to the image by the fullname of the file (including the file extension):
+Just place the images inside the src/img directory. And refer to the image by the fullname of the file (including the file extension):
 ```
 http://localhost:8000/test.jpg
 ```
