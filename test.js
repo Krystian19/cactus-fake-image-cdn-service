@@ -7,7 +7,7 @@ const baseUrl = `http://localhost:${PORT}`;
 test('Img static route is not working', async (t) => {
 
 	try {
-		const res = await axios.get(`${baseUrl}/test.jpg`);
+		const res = await axios.get(`${baseUrl}/tests.jpg`);
 		
 		// Response was successful
 		t.is(res.status, 200);
