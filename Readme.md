@@ -1,5 +1,5 @@
 # Fake Image CDN
-[![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/hummingbird-me/hummingbird-server)
+[![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/Krystian19/fake-image-cdn)
 
 Use this script as a service to mimic a real content delivery network that serves image files.
 
