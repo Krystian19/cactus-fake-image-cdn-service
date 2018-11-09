@@ -43,4 +43,4 @@ docker run -ti --name=fake_img_cdn -d -v $(pwd):/app -p 8000:3000 janguzman/fake
 - [ ] Setup examples and use cases. -->
 
 ## License
-MIT © Jan Guzman
+MIT © [Jan Guzman](https://github.com/Krystian19)
