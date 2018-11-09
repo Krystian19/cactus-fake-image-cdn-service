@@ -38,6 +38,12 @@ Then create docker container. (Note: where "$(pwd)" is the absolute path to your
 docker run -ti --name=fake_img_cdn -d -v $(pwd):/app -p 8000:3000 janguzman/fake_image_cdn
 ```
 
+## Run the tests
+Assuming the container's name is "fake_img_cdn", run this:
+```sh
+docker exec -ti fake_img_cdn ava
+```
+
 <!-- ### Todo list
 - [x] Setup the Dockerfile.
 - [ ] Setup examples and use cases. -->
