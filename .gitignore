@@ -6,6 +6,6 @@ node_modules/
 # Editor's local config file
 .vscode
 
-# Ignores everything inside videos file except the note.txt file
+# Ignores everything inside videos file except the test.jpg file
 src/img/*
-src/img/test.jpg
+!test.jpg
