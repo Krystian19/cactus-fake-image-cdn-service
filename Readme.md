@@ -19,7 +19,7 @@ services:
     build:
       ./fake-image-cdn
     volumes:
-      - ./fake-image-cdn:/app
+      - ./fake-image-cdn/src/img/:/app/src/img/
     ports: ['8000:3000']
 ```
 
@@ -36,7 +36,7 @@ docker build --no-cache -t janguzman/fake_image_cdn .
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=fake_img_cdn -d -v $(pwd):/app -p 8000:3000 janguzman/fake_image_cdn
+docker run -ti --name=fake_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/fake_image_cdn
 ```
 
 ## Run the tests
