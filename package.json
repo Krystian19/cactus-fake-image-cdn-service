@@ -10,6 +10,10 @@
   "author": "Jan Guzman",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "ava": "^1.0.0-rc.1"
   }
 }
