@@ -11,7 +11,7 @@ before_install:
   - docker build -t janguzman/fake_image_cdn .
   - docker images
 install:
-  - docker run -ti --name=fake_img_cdn -d -p 8000:3000 janguzman/fake_image_cdn
+  - docker run -ti --name=fake_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/fake_image_cdn
   - docker ps -a
 
 script:
