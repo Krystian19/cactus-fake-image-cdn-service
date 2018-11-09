@@ -1,5 +1,5 @@
 # Fake Image CDN
-[![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/Krystian19/fake-image-cdn)
+[![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/Krystian19/fake-image-cdn) [![Code Climate](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/gpa.svg)](https://codeclimate.com/github.com/Krystian19/hummingbird-server) [![Test Coverage](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/coverage.svg)](https://codeclimate.com/github/Krystian19/fake-image-cdn/coverage)
 
 Use this script as a service to mimic a real content delivery network that serves image files.
 
