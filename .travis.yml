@@ -11,5 +11,5 @@ before_install:
   - docker ps -a
   - docker exec -ti fake_img_cdn ava
 
-script:
-  - ava
+# script:
+#   - ava
