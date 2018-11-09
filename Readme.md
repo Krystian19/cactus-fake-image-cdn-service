@@ -1,6 +1,6 @@
 # Fake Image CDN 
 
-Use this script as a service to mimic a real content delivery network for image files.
+Use this script as a service to mimic a real content delivery network that serves image files.
 
 ## Requirements
 ```sh
@@ -42,6 +42,12 @@ docker run -ti --name=fake_img_cdn -d -v $(pwd):/app -p 8000:3000 janguzman/fake
 Assuming the container's name is "fake_img_cdn", run this:
 ```sh
 docker exec -ti fake_img_cdn ava
+```
+
+## Usage instructions
+Just place the images inside the src/img directory. And refere to the image by the fullname of the file (including the file extension):
+```
+http://localhost:8000/test.jpg
 ```
 
 <!-- ### Todo list
