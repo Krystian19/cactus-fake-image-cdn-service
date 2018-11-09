@@ -3,3 +3,7 @@
 
 # Editor's local config file
 .vscode
+
+# Ignores everything inside videos file except the note.txt file
+src/img/*
+src/img/test.jpg
