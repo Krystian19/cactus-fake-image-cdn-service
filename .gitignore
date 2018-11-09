@@ -1,0 +1,5 @@
+# Mac OS enviroment
+.DS_Store
+
+# Editor's local config file
+.vscode
