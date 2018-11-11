@@ -7,5 +7,5 @@ node_modules/
 .vscode
 
 # Ignores everything inside videos file except the test.jpg file
-src/img/*
+# src/img/*
 !test.jpg
