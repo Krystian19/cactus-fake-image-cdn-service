@@ -1,5 +1,5 @@
 # Cactus Fake Image CDN
-[![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/Krystian19/fake-image-cdn) [![Code Climate](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/gpa.svg)](https://codeclimate.com/github/Krystian19/fake-image-cdn) [![Test Coverage](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/coverage.svg)](https://codeclimate.com/github/Krystian19/fake-image-cdn/coverage)
+[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service) [![Code Climate](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service/badges/gpa.svg)](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service) [![Test Coverage](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service/badges/coverage.svg)](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service/coverage)
 
 Use this service to mimic a real content delivery network that serves image files for local development.
 
