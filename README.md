@@ -1,7 +1,7 @@
-# Fake Image CDN
+# Cactus Fake Image CDN
 [![Build Status](https://travis-ci.org/Krystian19/fake-image-cdn.svg?branch=master)](https://travis-ci.org/Krystian19/fake-image-cdn) [![Code Climate](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/gpa.svg)](https://codeclimate.com/github/Krystian19/fake-image-cdn) [![Test Coverage](https://codeclimate.com/github/Krystian19/fake-image-cdn/badges/coverage.svg)](https://codeclimate.com/github/Krystian19/fake-image-cdn/coverage)
 
-Use this script as a service to mimic a real content delivery network that serves image files.
+Use this service to mimic a real content delivery network that serves image files for local development.
 
 ## Requirements
 ```sh
@@ -15,11 +15,11 @@ How to use it inside a docker-compose file:
 version: '3'
 
 services:
-  fake_image_cdn: # fake-image-cdn service
+  cactus_image_cdn: # cactus-image-cdn service
     build:
-      ./fake-image-cdn
+      ./cactus-image-cdn
     volumes:
-      - ./fake-image-cdn/src/img/:/app/src/img/
+      - ./cactus-image-cdn/src/img/:/app/src/img/
     ports: ['8000:3000']
 ```
 
@@ -29,20 +29,20 @@ Inside the project's directory ...
 
 Build the docker image:
 ```
-docker build --no-cache -t janguzman/fake_image_cdn .
+docker build --no-cache -t janguzman/cactus_image_cdn .
 ```
 
 ### Run the project
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=fake_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/fake_image_cdn
+docker run -ti --name=cactus_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/cactus_image_cdn
 ```
 
 ## Run the tests
-Assuming the container's name is "fake_img_cdn", run this:
+Assuming the container's name is "cactus_img_cdn", run this:
 ```sh
-docker exec -ti fake_img_cdn ava
+docker exec -ti cactus_img_cdn ava
 ```
 
 ## Usage instructions
