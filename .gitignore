@@ -9,3 +9,8 @@ node_modules/
 # Ignores everything inside videos file except the test.jpg file
 # src/img/*
 !test.jpg
+
+# tests
+.nyc_output
+coverage.lcov
+/coverage/
