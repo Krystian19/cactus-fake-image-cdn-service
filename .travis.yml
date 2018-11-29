@@ -11,8 +11,9 @@ before_install:
   - docker build -t janguzman/cactus_image_cdn .
   - docker images
 install:
-  - docker run -ti --name=cactus_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/cactus_image_cdn
+  - docker run -ti --name=cactus_img_cdn -d -e CODECOV_TOKEN=$CODECOV_TOKEN -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/cactus_image_cdn
   - docker ps -a
 
 script:
-  - docker exec -ti cactus_img_cdn ava
+  - docker exec -ti cactus_img_cdn yarn test
+after_success: docker exec -ti cactus_video_cdn yarn coverage
