@@ -6,7 +6,7 @@ Use this service to mimic a real content delivery network that serves image file
 ## Requirements
 ```sh
 docker -v
-Docker version 18.03.0-ce # Or later
+  Docker version 18.03.0-ce # Or later
 ```
 
 ## Docker-compose setup example
