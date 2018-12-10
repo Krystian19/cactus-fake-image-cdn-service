@@ -16,6 +16,7 @@ version: '3'
 
 services:
   cactus_image_cdn: # cactus-image-cdn service
+    container_name: cactus_img_cdn
     build:
       ./cactus-image-cdn
     volumes:
