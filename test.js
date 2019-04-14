@@ -8,7 +8,7 @@ test('Img static route is not working', async (t) => {
 
 	try {
 		const res = await axios.get(`${baseUrl}/test.jpg`);
-		
+
 		// Response was successful
 		t.is(res.status, 200);
 	} catch (err) {
