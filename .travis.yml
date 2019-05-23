@@ -1,13 +1,14 @@
 sudo: required
 
-language: node_js
+language: gne
 node_js:
-  - "8"
+  - "10"
 
 services:
   - docker
 
 before_install:
+  - npm install -g npx
   - docker build -t janguzman/cactus_image_cdn .
   - docker images
 install:
@@ -15,5 +16,5 @@ install:
   - docker ps -a
 
 script:
-  - docker exec -ti cactus_img_cdn yarn test
-after_success: docker exec -ti cactus_img_cdn yarn coverage
+  - docker exec -ti cactus_img_cdn nginx -c /etc/nginx/nginx.conf -t
+after_success: npx codecov

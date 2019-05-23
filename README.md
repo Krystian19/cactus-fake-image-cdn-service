@@ -20,8 +20,8 @@ services:
     build:
       ./cactus-image-cdn
     volumes:
-      - ./cactus-image-cdn/src/img/:/app/src/img/
-    ports: ['8000:3000']
+      - ./cactus-image-cdn/images/:/var/www
+    ports: ['8000:80']
 ```
 
 ## Standalone Setup
@@ -37,13 +37,7 @@ docker build --no-cache -t janguzman/cactus_image_cdn .
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=cactus_img_cdn -d -v $(pwd)/src/img/:/app/src/img/ -p 8000:3000 janguzman/cactus_image_cdn
-```
-
-## Run the tests
-Assuming the container's name is "cactus_img_cdn", run this:
-```sh
-docker exec -ti cactus_img_cdn ava
+docker run -ti --name=cactus_img_cdn -d -v $(pwd)/images/:/var/www -p 8000:80 janguzman/cactus_image_cdn
 ```
 
 ## Usage instructions
@@ -51,10 +45,6 @@ Just place the images inside the src/img directory. And refer to the image by th
 ```
 http://localhost:8000/test.jpg
 ```
-
-<!-- ### Todo list
-- [x] Setup the Dockerfile.
-- [ ] Setup examples and use cases. -->
 
 ## License
 MIT © [Jan Guzman](https://github.com/Krystian19)
