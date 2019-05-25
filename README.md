@@ -25,7 +25,6 @@ services:
 ```
 
 ## Standalone Setup
-
 Inside the project's directory ...
 
 Build the docker image:
