@@ -1,5 +1,5 @@
 # Cactus Fake Image CDN
-[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service) [![Code Climate](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service/badges/gpa.svg)](https://codeclimate.com/github/Krystian19/cactus-fake-image-cdn-service) [![Test Coverage](https://codecov.io/gh/Krystian19/cactus-fake-image-cdn-service/branch/master/graph/badge.svg)](https://codecov.io/gh/Krystian19/cactus-fake-image-cdn-service)
+[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-image-cdn-service) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f532765d7ee248499c7a3ef4ff1f474c)](https://www.codacy.com/app/janfrancisco19/cactus-fake-image-cdn-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Krystian19/cactus-fake-image-cdn-service&amp;utm_campaign=Badge_Grade) [![Test Coverage](https://codecov.io/gh/Krystian19/cactus-fake-image-cdn-service/branch/master/graph/badge.svg)](https://codecov.io/gh/Krystian19/cactus-fake-image-cdn-service)
 
 Use this service to mimic a real content delivery network that serves image files for local development.
 
